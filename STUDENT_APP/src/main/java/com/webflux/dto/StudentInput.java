@@ -1,0 +1,18 @@
+package com.webflux.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class StudentInput {
+    private String firstName;
+    private String lastName;
+    private String email;
+    private AddressInput address;
+    private List<SubjectInput> learningSubjects;
+}
